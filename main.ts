@@ -1,3 +1,8 @@
+enum ActionKind {
+    Walking,
+    Idle,
+    Jumping
+}
 namespace myTiles {
     //% blockIdentity=images._tile
     export const tile0 = img`
@@ -191,6 +196,7 @@ controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
     )
 })
 let mySprite: Sprite = null
+let input2 = game.askForString("What is your name?")
 tiles.setTilemap(tiles.createTilemap(
             hex`10001000000000000000000000000000000000000000010b010a010b00000000000000000000010302020401000000000000000000000b060505070a000000000000000000000a0805050901000000000000000000000a0106070a0b000000000000000000000d0c06070c0e00000000000000000000000006070000000000000000000000000b030505040a000000000000000000000a060505070b0000000000000000000001080f0f090a000000000000000000000b010a010a01000000000000000000000d0c0c0c0c0e0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000`,
             img`
@@ -232,5 +238,6 @@ mySprite = sprites.create(img`
 . . . f f f f f f f f f f . . . 
 . . . . . f f . . f f . . . . . 
 `, SpriteKind.Player)
+mySprite.say("Hello, my name is " + input2 + "!")
 controller.moveSprite(mySprite)
 scene.cameraFollowSprite(mySprite)
