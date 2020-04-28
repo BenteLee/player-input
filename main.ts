@@ -171,6 +171,7 @@ function levelStart () {
         ))
         scene.setBackgroundColor(6)
         gotObject = 0
+        flavorText = "Maar ik durf niet alleen door het bos "
         warningText = " en raak niet verdwaalt"
         tiles.placeOnRandomTile(playerSprite, myTiles.tile2)
         for (let value of tiles.getTilesByType(myTiles.tile2)) {
@@ -228,6 +229,7 @@ function levelStart () {
             )
         }
     } else if (levelNumber == 1) {
+        game.showLongText("" + PlayerName + " loopt verder er ziet verderop een jongen staan. hij lijkt te zoeken naar iets", DialogLayout.Full)
         ObjectGame = "spiegel"
         tiles.setTilemap(tiles.createTilemap(
             hex`20001000111210101210111213131b1110141312131b10111b12111110131413101b111414010b0a010b100b010101011110101401010b01010a0101010a01010a010b1010010302040113011411110a01010a1101110113011011111301101412100111110b0616070b110111011410121301100a14011201140b011201010113011412100a08050901100a100a110a0101011001120a140a130101140a14010b011312100a011901151201100b110113010b11011301110113010b100112010b0112131210111a1011100111011001120101140a1101100a11010111011313010a01121111140111130b01120a120a11011312011b11100a1b1101010a0112011b0b1213010a010101010113181401100101010b010a01010a010b011001110a120114120113121411100113131401141110141314111011130b01011b0a10011401111b0b01010a010b0a01010a010b0101011301010b011401130111011101120b1b14011314101411111310141013011401110a101114130110011001010a1401101101140a010b010a0a010118110a130b1001010a01110a11010a010a1313101013011012111012111b11141011011301121411100110011313011314100b0b12120b010a010a010a010b01010a011201010a0101010a010114010101010b1712131411101112141110101111131314111012111b1110131214111b1210111113`,
@@ -254,6 +256,7 @@ function levelStart () {
         ))
         scene.setBackgroundColor(6)
         gotObject = 0
+        flavorText = "Maar ik kan hem niet vinden "
         warningText = " en wees voorzichtig"
         tiles.placeOnRandomTile(playerSprite, myTiles.tile2)
         for (let value of tiles.getTilesByType(myTiles.tile2)) {
@@ -413,7 +416,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.questGiver, function (sprite, otherSprite) {
     if (gotObject == 0) {
-        game.showLongText("Hoi " + PlayerName + " ik zoek mijn " + ObjectGame + ". Maar ik durf niet alleen door het bos ", DialogLayout.Bottom)
+        game.showLongText("Hoi " + PlayerName + " ik zoek mijn " + ObjectGame + ". " + flavorText, DialogLayout.Bottom)
         if (game.ask(" kan je mij helpen? ")) {
             game.showLongText("dank je wel" + warningText, DialogLayout.Bottom)
         } else {
@@ -442,6 +445,7 @@ let EnemieSprite: Sprite = null
 let objectSprite: Sprite = null
 let questGiverSprite: Sprite = null
 let warningText = ""
+let flavorText = ""
 let gotObject = 0
 let ObjectGame = ""
 let levelNumber = 0
