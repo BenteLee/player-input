@@ -230,23 +230,23 @@ function levelStart () {
     } else if (levelNumber == 1) {
         ObjectGame = "spiegel"
         tiles.setTilemap(tiles.createTilemap(
-            hex`20001000111210101210111213131b1110141312131b10111b12111110131413101b111414010b0a010b100b0101010101010101010101010101010101010101010101101001030204011301010101010101010101010101010101010101010101010111110b0616070b1101010101010101010101010101010101010101010101011412100a080509011001010a01010101010101010101010101010101010101011312100a0119010b120101010a0101010101010101010101010101010101010112131210111a101110010101010101010101010101010101010101010101010101121111140111130b01010101010a0101010101010a0a0101010101010101010112130101010101010101010101010101010101010101010101010101010101011412010101010101010a010101010101010a0101010101010101010101010101111b01010101010a0101010101010101010a01010101010101010101010101011b14010101010101010101010101010101010a0a01010101010101010101010110110101010101010a0a0101010a0a01010101010101010101010101010101011013010101010101010101010101010101010101010101010101010101010101121201010101010101010101010101010101010101010101010101010101011712131411101112141110101111131314111012111b1110131214111b1210111113`,
+            hex`20001000111210101210111213131b1110141312131b10111b12111110131413101b111414010b0a010b100b010101011110101401010b01010a0101010a01010a010b1010010302040113011411110a01010a1101110113011011111301101412100111110b0616070b110111011410121301100a14011201140b011201010113011412100a08050901100a100a110a0101011001120a140a130101140a14010b011312100a011901151201100b110113010b11011301110113010b100112010b0112131210111a1011100111011001120101140a1101100a11010111011313010a01121111140111130b01120a120a11011312011b11100a1b1101010a0112011b0b1213010a010101010113181401100101010b010a01010a010b011001110a120114120113121411100113131401141110141314111011130b01011b0a10011401111b0b01010a010b0a01010a010b0101011301010b011401130111011101120b1b14011314101411111310141013011401110a101114130110011001010a1401101101140a010b010a0a010118110a130b1001010a01110a11010a010a1313101013011012111012111b11141011011301121411100110011313011314100b0b12120b010a010a010a010b01010a011201010a0101010a010114010101010b1712131411101112141110101111131314111012111b1110131214111b1210111113`,
             img`
 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
-2 . . . . . 2 . . . . . . . . . . . . . . . . . . . . . . . . 2 
-2 . . . . . 2 . . . . . . . . . . . . . . . . . . . . . . . . 2 
-2 . . . . . 2 . . . . . . . . . . . . . . . . . . . . . . . 2 2 
-2 . . . . . 2 . . . . . . . . . . . . . . . . . . . . . . . 2 2 
-2 . . . . . 2 . . . . . . . . . . . . . . . . . . . . . . . 2 2 
-2 2 2 . 2 2 2 . . . . . . . . . . . . . . . . . . . . . . . . 2 
-2 2 2 . 2 2 . . . . . . . . . . . . . . . . . . . . . . . . . 2 
-2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2 
-2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2 
-2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2 
-2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2 
-2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2 
-2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2 
-2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2 
+2 . . . . . 2 . . . . . 2 2 2 2 . . . . . . . . . . . . . . . 2 
+2 . . . . . 2 . 2 2 2 . . . . 2 . 2 . 2 . 2 2 2 2 . 2 2 2 2 . 2 
+2 . . . . . 2 . 2 . 2 2 2 2 . 2 . 2 . 2 . 2 . . 2 . . . 2 . 2 2 
+2 . . . . . 2 . 2 . 2 . . . . 2 . 2 . 2 . 2 . . 2 . 2 . . . 2 2 
+2 . . . . . 2 . 2 . 2 . 2 . . 2 . 2 . 2 . 2 . . 2 . 2 . . . 2 2 
+2 2 2 . 2 2 2 . 2 . 2 . 2 . . 2 . 2 . 2 . 2 . . 2 . 2 2 . . . 2 
+2 2 2 . 2 2 . . 2 . 2 . 2 . 2 2 . 2 2 2 . 2 2 . . . . 2 . 2 . 2 
+2 . . . . . . . 2 . 2 . 2 . . . . . . . . . . . . 2 . 2 . 2 . 2 
+2 . 2 2 2 2 2 . 2 2 2 . 2 2 2 2 2 2 2 2 2 2 . . . 2 . 2 . 2 . 2 
+2 . . . . . . . . . . . . . . . 2 . . . . 2 . 2 . 2 . 2 . 2 . 2 
+2 . 2 2 2 2 2 2 2 2 2 2 2 . 2 . 2 . 2 2 2 2 . 2 . 2 . . . 2 . 2 
+2 . 2 . . . . . . . . . 2 . 2 . 2 . . . . 2 . 2 . . . . 2 2 2 2 
+2 . 2 2 2 2 2 2 2 2 2 2 2 . 2 . 2 2 2 2 . 2 . 2 2 . 2 2 2 . . 2 
+2 . . . . . . . . . . . . . 2 . . . . . . . . . 2 . . . . . . 2 
 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
 `,
             [myTiles.tile0,sprites.castle.tileGrass1,sprites.castle.tilePath2,sprites.castle.tilePath1,sprites.castle.tilePath3,sprites.castle.tilePath5,sprites.castle.tilePath4,sprites.castle.tilePath6,sprites.castle.tilePath7,sprites.castle.tilePath9,sprites.castle.tileGrass3,sprites.castle.tileGrass2,sprites.builtin.forestTiles18,sprites.builtin.forestTiles17,sprites.builtin.forestTiles19,sprites.castle.tilePath8,sprites.castle.saplingOak,sprites.castle.saplingPine,sprites.castle.rock1,sprites.castle.rock0,sprites.castle.rock2,myTiles.tile1,myTiles.tile2,myTiles.tile3,myTiles.tile4,myTiles.tile5,myTiles.tile6,sprites.castle.shrub],
@@ -383,7 +383,7 @@ c c c f f f f f f c c b b c . .
 . . c c c . . . . . . . c c c c 
 . . . . . . . . . . . . . . . . 
 `],
-            500,
+            200,
             true
             )
             tiles.placeOnTile(EnemieSprite, value)
@@ -413,7 +413,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.questGiver, function (sprite, otherSprite) {
     if (gotObject == 0) {
-        game.showLongText("Hoi " + PlayerName + " ik zoek mijn " + ObjectGame, DialogLayout.Bottom)
+        game.showLongText("Hoi " + PlayerName + " ik zoek mijn " + ObjectGame + ". Maar ik durf niet alleen door het bos ", DialogLayout.Bottom)
         if (game.ask(" kan je mij helpen? ")) {
             game.showLongText("dank je wel" + warningText, DialogLayout.Bottom)
         } else {
@@ -448,6 +448,8 @@ let levelNumber = 0
 let playerSprite: Sprite = null
 let PlayerName = ""
 PlayerName = "Lente"
+game.showLongText("het is een zonnige dag en " + PlayerName + " loopt door het bos. door de bomen ziet ze een ander meisje staan. ze loopt naar het huilende meisje toe", DialogLayout.Full)
+music.playMelody("G A - G - B B C5 ", 120)
 playerSprite = sprites.create(img`
 . . . . . . . . . . . . . . . . 
 . . . . . f f f f f f . . . . . 
@@ -466,10 +468,10 @@ playerSprite = sprites.create(img`
 . . . f f f f f f f f f f . . . 
 . . . . . f f . . f f . . . . . 
 `, SpriteKind.Player)
-playerSprite.say("Hoi Ik ben " + PlayerName, 100)
+playerSprite.say("Hoi Ik ben " + PlayerName, 5000)
 controller.moveSprite(playerSprite)
 scene.cameraFollowSprite(playerSprite)
-levelNumber = 1
+levelNumber = 0
 levelStart()
 game.onUpdate(function () {
     playerSprite.setImage(img`
