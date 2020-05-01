@@ -1,5 +1,5 @@
 {
-    "name": "Lente's hulp",
+    "name": "Lente's HulpDienst",
     "dependencies": {
         "device": "*",
         "animation": "*"
