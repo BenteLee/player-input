@@ -602,11 +602,11 @@ function win () {
 . . f 5 f d f d d f d f 5 f . . 
 . . f 5 f d 3 d d 3 d f 5 f . . 
 . . f 5 5 f d d d d f 5 5 f . . 
-. f 5 5 f 3 f f f f 3 f 5 5 f . 
-. . f f d 3 1 3 3 1 3 d f f . . 
-. . f d d f 3 1 1 3 f d d f . . 
-. . . f f 3 3 3 3 3 3 f f . . . 
-. . . f 3 3 1 3 3 1 3 3 f . . . 
+. f 5 5 f 4 f f f f 4 f 5 5 f . 
+. . f f d 4 1 4 4 1 4 d f f . . 
+. . f d d f 4 1 1 4 f d d f . . 
+. . . f f 4 4 4 4 4 4 f f . . . 
+. . . f 4 4 1 4 4 1 4 4 f . . . 
 . . . f f f f f f f f f f . . . 
 . . . . . f f . . f f . . . . . 
 `, SpriteKind.Player)
@@ -812,37 +812,37 @@ playerSprite = sprites.create(img`
 . . f 5 f d f d d f d f 5 f . . 
 . . f 5 f d 3 d d 3 d f 5 f . . 
 . . f 5 5 f d d d d f 5 5 f . . 
-. f 5 5 f 3 f f f f 3 f 5 5 f . 
-. . f f d 3 1 3 3 1 3 d f f . . 
-. . f d d f 3 1 1 3 f d d f . . 
-. . . f f 3 3 3 3 3 3 f f . . . 
-. . . f 3 3 1 3 3 1 3 3 f . . . 
+. f 5 5 f 4 f f f f 4 f 5 5 f . 
+. . f f d 4 1 4 4 1 4 d f f . . 
+. . f d d f 4 1 1 4 f d d f . . 
+. . . f f 4 4 4 4 4 4 f f . . . 
+. . . f 4 4 1 4 4 1 4 4 f . . . 
 . . . f f f f f f f f f f . . . 
 . . . . . f f . . f f . . . . . 
 `, SpriteKind.Player)
 controller.moveSprite(playerSprite)
 scene.cameraFollowSprite(playerSprite)
 scene.setBackgroundColor(7)
-levelNumber = 2
+levelNumber = 0
 levelStart()
 game.onUpdate(function () {
     playerSprite.setImage(img`
 . . . . . . . . . . . . . . . . 
 . . . . . f f f f f f . . . . . 
-. . . . f 5 5 5 5 5 5 f . . . . 
-. . . f 5 5 5 5 5 5 5 5 f . . . 
-. . . f 5 5 f f f f 5 5 f . . . 
+. . . . f 1 5 5 5 1 5 f . . . . 
+. . . f 1 5 5 5 5 5 1 5 f . . . 
+. . . f 5 5 f f f f 5 1 f . . . 
 . . . f 5 f f d d f f 5 f . . . 
 . . f 5 f d f d d f d f 5 f . . 
 . . f 5 f d 3 d d 3 d f 5 f . . 
 . . f 5 5 f d d d d f 5 5 f . . 
-. f 5 5 f 3 f f f f 3 f 5 5 f . 
-. . f f d 3 1 3 3 1 3 d f f . . 
-. . f d d f 3 1 1 3 f d d f . . 
-. . . f f 3 3 3 3 3 3 f f . . . 
-. . . f 3 3 1 3 3 1 3 3 f . . . 
-. . . f f f f f f f f f f . . . 
-. . . . . f f . . f f . . . . . 
+. f 5 5 f 4 f f f f 4 f 5 5 f . 
+. . f f 4 4 1 4 4 1 4 d f f . . 
+. . . f d f 4 1 1 4 f f d f . . 
+. . . f d f 4 4 4 4 4 f f . . . 
+. . . f f 4 1 4 4 1 4 4 f . . . 
+. . . . f f f f f f f f f . . . 
+. . . . . . . . . f f . . . . . 
 `)
     if (playerSprite.vy < 0) {
         if (playerSprite.y % 2 == 0) {
@@ -857,11 +857,11 @@ game.onUpdate(function () {
 . . . f 5 5 5 5 5 5 5 5 f . . . 
 . . f f 5 5 5 5 5 5 5 5 f f . . 
 . f 5 5 5 f 5 5 5 5 f 5 5 5 f . 
-. . f f f 3 f f f f 1 f f f . . 
-. . . f d f 3 3 3 3 d d f . . . 
-. . . . f 3 1 3 3 f d d f . . . 
-. . . . f 3 3 1 1 3 f f . . . . 
-. . . . f f 3 3 f f . . . . . . 
+. . f f f 4 f f f f 1 f f f . . 
+. . . f d f 4 4 4 4 d d f . . . 
+. . . . f 4 1 4 4 f d d f . . . 
+. . . . f 4 4 1 1 4 f f . . . . 
+. . . . f f 4 4 f f . . . . . . 
 . . . . . . f f . . . . . . . . 
 `)
         } else {
@@ -876,11 +876,11 @@ game.onUpdate(function () {
 . . . f 5 5 5 5 5 5 5 5 f . . . 
 . . f f 5 5 5 5 5 5 5 5 f f . . 
 . f 5 5 5 f 5 5 5 5 f 5 5 5 f . 
-. . f f f 1 f f f f 3 f f f . . 
-. . . f d d 3 3 3 3 f d f . . . 
-. . . f d d f 3 3 1 3 f . . . . 
-. . . . f f 3 1 1 3 3 f . . . . 
-. . . . . . f f 3 3 f f . . . . 
+. . f f f 1 f f f f 4 f f f . . 
+. . . f d d 4 4 4 4 f d f . . . 
+. . . f d d f 4 4 1 4 f . . . . 
+. . . . f f 4 1 1 4 4 f . . . . 
+. . . . . . f f 4 4 f f . . . . 
 . . . . . . . . f f . . . . . . 
 `)
         }
@@ -895,11 +895,11 @@ game.onUpdate(function () {
 . . f 5 f d f d d f d f 5 f . . 
 . . f 5 f d 3 d d 3 d f 5 f . . 
 . . f 5 5 f d d d d f 5 5 f . . 
-. f 5 5 f 3 f f f f 3 f 5 5 f . 
-. . f f d 3 1 3 3 1 3 3 f f . . 
-. . f d f f 3 1 1 3 f d f . . . 
-. . . f f 3 3 3 3 3 f d f . . . 
-. . . f 3 3 1 3 3 1 3 f f . . . 
+. f 5 5 f 4 f f f f 4 f 5 5 f . 
+. . f f d 4 1 4 4 1 4 4 f f . . 
+. . f d f f 4 1 1 4 f d f . . . 
+. . . f f 4 4 4 4 4 f d f . . . 
+. . . f 4 4 1 4 4 1 4 f f . . . 
 . . . f f f f f f f f f . . . . 
 . . . . . f f . . . . . . . . . 
 `)
@@ -919,11 +919,11 @@ game.onUpdate(function () {
 . . . . f d f d 5 5 5 5 f f . . 
 . . . . f d 3 d d 5 5 5 f 5 f . 
 . . . . . f d d d f f 5 f f . . 
-. . . . . . f f 3 3 f f 5 5 f . 
+. . . . . . f f 4 4 f f 5 5 f . 
 . . . . . f d d d d f f f f . . 
-. . . . . f d d d f 3 f . . . . 
-. . . . . . f f f d 1 3 f . . . 
-. . . . . f f f 3 3 f f . . . . 
+. . . . . f d d d f 4 f . . . . 
+. . . . . . f f f 4 1 4 f . . . 
+. . . . . f f f 4 4 f f . . . . 
 . . . . . f f f f f f f . . . . 
 `)
             playerSprite.image.flipX()
@@ -939,11 +939,11 @@ game.onUpdate(function () {
 . . . . f d f d 5 5 5 5 f f . . 
 . . . . f d 3 d d 5 5 5 f 5 f . 
 . . . . . f d d d f f 5 f f . . 
-. . . . . . f f 3 3 f f 5 5 f . 
-. . . . . f 1 3 3 d d f f f . . 
-. . . . . f 3 3 3 f d d f . . . 
-. . . . . . f 3 1 f f f . . . . 
-. . . . . f 3 3 3 3 f . . . . . 
+. . . . . . f f 4 4 f f 5 5 f . 
+. . . . . f 1 4 4 d d f f f . . 
+. . . . . f 4 4 4 f d d f . . . 
+. . . . . . f 4 1 f f f . . . . 
+. . . . . f 4 4 4 4 f . . . . . 
 . . . . . . f f f f f . . . . . 
 `)
             playerSprite.image.flipX()
@@ -961,11 +961,11 @@ game.onUpdate(function () {
 . . . . f d f d 5 5 5 5 f f . . 
 . . . . f d 3 d d 5 5 5 f 5 f . 
 . . . . . f d d d f f 5 f f . . 
-. . . . . . f f 3 3 f f 5 5 f . 
+. . . . . . f f 4 4 f f 5 5 f . 
 . . . . . f d d d d f f f f . . 
-. . . . . f d d d f 3 f . . . . 
-. . . . . . f f f d 1 3 f . . . 
-. . . . . f f f 3 3 f f . . . . 
+. . . . . f d d d f 4 f . . . . 
+. . . . . . f f f 4 1 4 f . . . 
+. . . . . f f f 4 4 f f . . . . 
 . . . . . f f f f f f f . . . . 
 `)
         } else {
@@ -980,11 +980,11 @@ game.onUpdate(function () {
 . . . . f d f d 5 5 5 5 f f . . 
 . . . . f d 3 d d 5 5 5 f 5 f . 
 . . . . . f d d d f f 5 f f . . 
-. . . . . . f f 3 3 f f 5 5 f . 
-. . . . . f 1 3 3 d d f f f . . 
-. . . . . f 3 3 3 f d d f . . . 
-. . . . . . f 3 1 f f f . . . . 
-. . . . . f 3 3 3 3 f . . . . . 
+. . . . . . f f 4 4 f f 5 5 f . 
+. . . . . f 1 4 4 d d f f f . . 
+. . . . . f 4 4 4 f d d f . . . 
+. . . . . . f 4 1 f f f . . . . 
+. . . . . f 4 4 4 4 f . . . . . 
 . . . . . . f f f f f . . . . . 
 `)
         }
