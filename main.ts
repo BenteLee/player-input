@@ -255,7 +255,7 @@ c c c f f f f f f c c b b c . .
 }
 function levelStart () {
     if (levelNumber == 0) {
-        game.showLongText("het is een zonnige dag en " + PlayerName + " loopt door het bos. door de bomen ziet ze een ander meisje staan. ze loopt naar het droevige meisje toe", DialogLayout.Bottom)
+        game.showLongText("het is een zonnige dag en " + PlayerName + " loopt door het bos. door de bomen   ziet ze een ander    meisje staan. ze loopt naar het droevige meisje toe", DialogLayout.Bottom)
         tiles.setTilemap(tiles.createTilemap(
             hex`2b001700111210191210111b141312141b10101c10101010101010101010101b14121313141b10101010101b14121314010b16010b100101130101010b0110010a010a010101140a01010a01010b011c010a1c010a010b0b0b12100103050401130a0114010a01010110010101010b0101120a010a010a01010a140a0a010101010b170b14110b0615070b1101011b0a01140a01100a01131214010a130101101011110101120101010a011c0b0b0b12100a06050901100a011001011b010110010a0101100101010b01100b0b110a011201011b1412141b1b1413100a0607010b1201011001011c01011001010101100a0a0101011001171001011b0a01010a010a01010a1412100807101110010a100b0113010a121b14010a10010114010a100a011001011001010b0101010b01011b11110a1a11130a0101110101140a01010a010b0110010110010a110a0110010111010a1010111110101010120101010a01010b01110a011b01010101010101100101110a01110101100a01110a01100a01010b01011114010b01010101010110010110111110101b010a100a0a11010110010a10010a10010a1117010a010101101b01011c1b141301011c010a010b01010113010114010110010b140101120a0114010b101011111001011b1001011001010a010a120101010101010a01010101010b1001010a010a12010a0a010101010a011b0a0114100101100a0a010101131213010a14010a01010a01010110010a01010113010a0101010a0101011401011211010a10010113141213131201011b0101141b101013131c01011410131301011412131314010a13010b1310010110010b010a0101010b010110010b0a010101010b100a0101010a010b010a010101010101130101141b010a1b0a01010a010101010101110101010101010101110101010a0101010101010a01010b0112010114140101140101141c1b10101010111c111010101b14010111010b1c12141b10101111101b1413141c0b011b120101120a0a01010a010b01010101010a010a010101011001010101010a010a010a010101010a010101141301011301010a01010a01010a0a010101010a01010b0110010a010a010101010b01010b010a010a0a011413010b1313141b10101011101111101011111110140101140a01130a01131214101010111011101b1412131401010a0101010a01010101010a010a0101010a0101010101011201010b0101010101010a01010a010114140101010101010a0101010b01010101010a01010101010b010112010101010a0101010101010b010117101312141b10101111111010101c10101b1412131312141b101b141c141b1010111010101110101011101110`,
             img`
@@ -352,9 +352,9 @@ f b b f f f e e e e f f f b b f
             [myTiles.tile0,sprites.castle.tileGrass1,sprites.castle.tilePath2,sprites.castle.tilePath1,sprites.castle.tilePath3,sprites.castle.tilePath5,sprites.castle.tilePath4,sprites.castle.tilePath6,sprites.castle.tilePath7,sprites.castle.tilePath9,sprites.castle.tileGrass3,sprites.castle.tileGrass2,sprites.builtin.forestTiles18,sprites.builtin.forestTiles17,sprites.builtin.forestTiles19,sprites.castle.tilePath8,sprites.castle.saplingOak,sprites.castle.saplingPine,sprites.castle.rock1,sprites.castle.rock0,sprites.castle.rock2,myTiles.tile1,myTiles.tile2,myTiles.tile3,myTiles.tile4,myTiles.tile5,myTiles.tile6,sprites.castle.shrub,sprites.castle.tileDarkGrass1,sprites.castle.tileDarkGrass3,sprites.castle.tileDarkGrass2],
             TileScale.Sixteen
         ))
-        game.showLongText("" + PlayerName + " loopt verder er ziet verderop een jongen staan. hij lijkt te zoeken naar iets", DialogLayout.Full)
+        game.showLongText("" + PlayerName + " loopt verder er   ziet verderop een jongen staan. hij lijkt te     zoeken naar iets", DialogLayout.Full)
         flavorText = "Maar ik kan hem niet vinden "
-        warningText = " en wees voorzichtig"
+        warningText = " en wees    voorzichtig"
         questGiverSprite = sprites.create(img`
 . . . . . . f f f f . . . . . . 
 . . . . f f f 2 2 f f f . . . . 
@@ -420,7 +420,7 @@ f b b f f f e e e e f f f b b f
             TileScale.Sixteen
         ))
         scene.setBackgroundColor(6)
-        game.showLongText("de zon gaat langzaam onder terwijl " + PlayerName + " verder loopt. plots hoort " + PlayerName + " een meisje huilen", DialogLayout.Full)
+        game.showLongText("de zon gaat langzaam    onder terwijl " + PlayerName + "     verder loopt. plots hoort " + PlayerName + " een meisje huilen", DialogLayout.Full)
         info.setLife(2)
         flavorText = "ik ben hem kwijt geraakt "
         warningText = ", kijk wel uit voor de vleermuizen"
@@ -511,7 +511,7 @@ c b d d d d d 5 5 5 5 5 5 5 b .
             [myTiles.tile0,sprites.castle.tileGrass1,sprites.castle.tilePath2,sprites.castle.tilePath1,sprites.castle.tilePath3,sprites.castle.tilePath5,sprites.castle.tilePath4,sprites.castle.tilePath6,sprites.castle.tilePath7,sprites.castle.tilePath9,sprites.castle.tileGrass3,sprites.castle.tileGrass2,sprites.builtin.forestTiles18,sprites.builtin.forestTiles17,sprites.builtin.forestTiles19,sprites.castle.tilePath8,sprites.castle.saplingOak,sprites.castle.saplingPine,sprites.castle.rock1,sprites.castle.rock0,sprites.castle.rock2,myTiles.tile1,myTiles.tile2,myTiles.tile3,myTiles.tile4,myTiles.tile5,myTiles.tile6,sprites.castle.shrub,sprites.castle.tileDarkGrass3,sprites.castle.tileDarkGrass1,sprites.castle.tileDarkGrass2],
             TileScale.Sixteen
         ))
-        game.showLongText("de zon is onder gegaan wanneer " + PlayerName + " verder loopt. het is donker als " + PlayerName + " een jongen hoort roepen", DialogLayout.Full)
+        game.showLongText("de zon is onder gegaan wanneer " + PlayerName + " verder    loopt. het is donker als " + PlayerName + " een jongen hoort roepen", DialogLayout.Full)
         info.setLife(3)
         info.startCountdown(60)
         flavorText = "hij is weg gerend"
